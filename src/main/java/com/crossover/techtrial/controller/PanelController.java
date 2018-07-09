@@ -86,8 +86,7 @@ public class PanelController {
   public ResponseEntity<List<DailyElectricity>> allDailyElectricityFromYesterday(
       @PathVariable(value = "panel-serial") String panelSerial) {
     Panel panel = panelService.findBySerial(panelSerial);
-    
-	List<DailyElectricity> dailyElectricityForPanel = new ArrayList<>();
+    List<DailyElectricity> dailyElectricityForPanel = hourlyElectricityService.getAllDailyElectricityByPanelId(panel.getId());
     return ResponseEntity.ok(dailyElectricityForPanel);
   }
 }
