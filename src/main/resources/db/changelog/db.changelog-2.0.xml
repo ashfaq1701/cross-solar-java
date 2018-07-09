@@ -1,0 +1,250 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+	<changeSet author="java" id="1001122005">
+		<insert tableName="panel">
+			<column name="id">2</column>
+			<column name="serial">1234567890123467</column>
+			<column name="longitude">56.104394</column>
+			<column name="latitude">18.999671</column>
+			<column name="brand">tesla-a</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122006">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">200</column>
+			<column name="reading_at">2018-01-31 10:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122007">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">220</column>
+			<column name="reading_at">2018-01-31 11:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122008">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">110</column>
+			<column name="reading_at">2018-01-31 08:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122009">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">130</column>
+			<column name="reading_at">2018-01-31 07:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122010">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">120</column>
+			<column name="reading_at">2018-01-31 06:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122011">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">180</column>
+			<column name="reading_at">2018-01-31 05:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122012">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">231</column>
+			<column name="reading_at">2018-01-31 18:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122013">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">120</column>
+			<column name="reading_at">2018-01-31 21:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122014">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">140</column>
+			<column name="reading_at">2018-01-31 23:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122015">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">210</column>
+			<column name="reading_at">2018-01-31 13:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122016">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">230</column>
+			<column name="reading_at">2018-01-31 14:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122017">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">172</column>
+			<column name="reading_at">2018-01-31 01:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122018">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">80</column>
+			<column name="reading_at">2018-01-31 03:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122019">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">165</column>
+			<column name="reading_at">2018-01-31 04:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122020">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">60</column>
+			<column name="reading_at">2018-02-01 01:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122021">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">80</column>
+			<column name="reading_at">2018-02-01 02:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122022">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">90</column>
+			<column name="reading_at">2018-02-01 03:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122023">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">165</column>
+			<column name="reading_at">2018-02-01 04:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122024">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">110</column>
+			<column name="reading_at">2018-02-01 05:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122025">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">115</column>
+			<column name="reading_at">2018-02-01 06:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122026">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">120</column>
+			<column name="reading_at">2018-02-01 07:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122027">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">125</column>
+			<column name="reading_at">2018-02-01 08:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122028">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">130</column>
+			<column name="reading_at">2018-02-01 09:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122029">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">135</column>
+			<column name="reading_at">2018-02-01 10:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122030">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">94</column>
+			<column name="reading_at">2018-02-01 11:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122031">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">113</column>
+			<column name="reading_at">2018-02-01 12:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122032">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">61</column>
+			<column name="reading_at">2018-02-01 13:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122033">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">84</column>
+			<column name="reading_at">2018-02-01 14:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122034">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">211</column>
+			<column name="reading_at">2018-02-01 15:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122035">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">169</column>
+			<column name="reading_at">2018-02-01 16:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122036">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">143</column>
+			<column name="reading_at">2018-02-01 17:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122037">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">76</column>
+			<column name="reading_at">2018-02-01 18:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122038">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">98</column>
+			<column name="reading_at">2018-02-01 19:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122039">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">162</column>
+			<column name="reading_at">2018-02-01 20:00:00</column>
+		</insert>
+	</changeSet>
+</databaseChangeLog>
