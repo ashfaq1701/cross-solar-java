@@ -247,4 +247,109 @@
 			<column name="reading_at">2018-02-01 20:00:00</column>
 		</insert>
 	</changeSet>
+	<changeSet author="java" id="1001122040">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">161</column>
+			<column name="reading_at">2018-02-01 03:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122041">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">175</column>
+			<column name="reading_at">2018-02-02 05:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122042">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">192</column>
+			<column name="reading_at">2018-02-03 03:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122043">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">194</column>
+			<column name="reading_at">2018-03-01 03:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122044">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">101</column>
+			<column name="reading_at">2018-03-02 04:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122045">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">103</column>
+			<column name="reading_at">2018-04-02 05:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122046">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">115</column>
+			<column name="reading_at">2018-03-01 04:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122047">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">121</column>
+			<column name="reading_at">2018-03-02 03:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122048">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">112</column>
+			<column name="reading_at">2018-03-03 04:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122049">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">86</column>
+			<column name="reading_at">2018-04-02 02:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122050">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">87</column>
+			<column name="reading_at">2018-04-01 02:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122051">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">76</column>
+			<column name="reading_at">2018-04-02 01:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122052">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">97</column>
+			<column name="reading_at">2018-04-01 03:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122053">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">1</column>
+			<column name="generated_electricity">97</column>
+			<column name="reading_at">2020-04-01 03:00:00</column>
+		</insert>
+	</changeSet>
+	<changeSet author="java" id="1001122054">
+		<insert tableName="hourly_electricity">
+			<column name="panel_id">2</column>
+			<column name="generated_electricity">37</column>
+			<column name="reading_at">2020-04-01 03:00:00</column>
+		</insert>
+	</changeSet>
 </databaseChangeLog>
