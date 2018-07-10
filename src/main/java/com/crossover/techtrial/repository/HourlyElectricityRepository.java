@@ -21,6 +21,6 @@ public interface HourlyElectricityRepository
     extends PagingAndSortingRepository<HourlyElectricity,Long> {
   Page<HourlyElectricity> findAllByPanelIdOrderByReadingAtDesc(Long panelId,Pageable pageable);
   
-  @Query("SELECT new com.crossover.techtrial.dto.DailyElectricity(day(h.readingAt), month(h.readingAt), year(h.readingAt), sum(h.generatedElectricity), avg(h.generatedElectricity), min(h.generatedElectricity), max(h.generatedElectricity)) FROM HourlyElectricity h join h.panel as p where (p.id = :panelId and h.readingAt < current_date()) group by day(h.readingAt), month(h.readingAt), year(h.readingAt) order by year(h.readingAt) desc, month(h.readingAt) desc, day(h.readingAt) desc")
+  @Query("SELECT new com.crossover.techtrial.dto.DailyElectricity(max(h.readingAt), sum(h.generatedElectricity), avg(h.generatedElectricity), min(h.generatedElectricity), max(h.generatedElectricity)) FROM HourlyElectricity h join h.panel as p where (p.id = :panelId and h.readingAt < current_date()) group by day(h.readingAt), month(h.readingAt), year(h.readingAt) order by year(h.readingAt) desc, month(h.readingAt) desc, day(h.readingAt) desc")
   List<DailyElectricity> getAllDailyElectricityByPanelId(@Param("panelId") Long panelId);
 }

@@ -29,10 +29,8 @@ public class DailyElectricity implements Serializable {
 	  
   }
   
-  public DailyElectricity(int day, int month, int year, Long sum, Double average, Long min, Long max) {
-	  String dateStr = String.format(String.format("%04d", year) + "-" + String.format("%02d", month) + "-" + String.format("%02d", day));
-	  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-	  this.date = LocalDate.parse(dateStr, formatter);
+  public DailyElectricity(LocalDateTime dateTime, Long sum, Double average, Long min, Long max) {
+	  this.date = dateTime.toLocalDate();
 	  this.sum = sum;
 	  this.average = average;
 	  this.min = min;
