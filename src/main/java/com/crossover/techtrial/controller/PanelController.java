@@ -54,7 +54,10 @@ public class PanelController {
   public ResponseEntity<?> saveHourlyElectricity(
       @PathVariable(value = "panel-serial") String panelSerial, 
       @RequestBody HourlyElectricity hourlyElectricity) {
-	  Panel panel = panelService.findBySerial(panelSerial); 
+	  Panel panel = panelService.findBySerial(panelSerial);
+	  if (panel == null) {
+		  return ResponseEntity.notFound().build(); 
+	  }
 	  hourlyElectricity.setPanel(panel);
 	  return ResponseEntity.ok(hourlyElectricityService.save(hourlyElectricity));
   }
@@ -87,6 +90,9 @@ public class PanelController {
   public ResponseEntity<List<DailyElectricity>> allDailyElectricityFromYesterday(
       @PathVariable(value = "panel-serial") String panelSerial) {
     Panel panel = panelService.findBySerial(panelSerial);
+    if (panel == null) {
+    	return ResponseEntity.notFound().build();
+    }
     List<DailyElectricity> dailyElectricityForPanel = hourlyElectricityService.getAllDailyElectricityByPanelId(panel.getId());
     return ResponseEntity.ok(dailyElectricityForPanel);
   }
