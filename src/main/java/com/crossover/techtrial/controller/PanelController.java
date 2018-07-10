@@ -55,7 +55,9 @@ public class PanelController {
   public ResponseEntity<?> saveHourlyElectricity(
       @PathVariable(value = "panel-serial") String panelSerial, 
       @RequestBody HourlyElectricity hourlyElectricity) {
-    return ResponseEntity.ok(hourlyElectricityService.save(hourlyElectricity));
+	  Panel panel = panelService.findBySerial(panelSerial); 
+	  hourlyElectricity.setPanel(panel);
+	  return ResponseEntity.ok(hourlyElectricityService.save(hourlyElectricity));
   }
    
   /**
