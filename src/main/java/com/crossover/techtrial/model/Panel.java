@@ -7,7 +7,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 import org.springframework.lang.Nullable;
 
 /**
@@ -28,9 +31,11 @@ public class Panel implements Serializable {
 
   @NotNull
   @Column(name = "serial")
+  @Size(min=16, max=16)
   String serial;
 
   @Column(name = "longitude")
+  @Digits(integer = 3, fraction = 6)
   Double longitude;
 
   @Column(name = "latitude")
