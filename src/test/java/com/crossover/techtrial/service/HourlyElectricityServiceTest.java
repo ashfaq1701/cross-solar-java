@@ -57,7 +57,7 @@ public class HourlyElectricityServiceTest {
 	}
 	
 	@Test
-	public void getAllDailyElectricityByPanelId() {
+	public void getAllDailyElectricityByPanelIdTest() {
 		List<DailyElectricity> dailyElectricities = getDailyElectricities();
 		Mockito.when(hourlyElectricityRepository.getAllDailyElectricityByPanelId(1L)).thenReturn(dailyElectricities);
 		Assert.assertTrue(hourlyElectricityService.getAllDailyElectricityByPanelId(1L).equals(dailyElectricities));
