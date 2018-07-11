@@ -50,7 +50,7 @@ public class HourlyElectricityServiceTest {
 	@Test
 	public void getAllHourlyElectricityByPanelIdTest() {
 		Pageable pageable = PageRequest.of(0, 4);
-		Page<HourlyElectricity> hourlyElectricityPage = hourlyElectricityService.getAllHourlyElectricityByPanelId(1L, pageable);
+		Page<HourlyElectricity> hourlyElectricityPage = getHourlyElectricitiesPage();
 		Mockito.when(hourlyElectricityRepository.findAllByPanelIdOrderByReadingAtDesc(1L, pageable)).thenReturn(hourlyElectricityPage);
 		
 		Assert.assertTrue(hourlyElectricityService.getAllHourlyElectricityByPanelId(1L, pageable).equals(hourlyElectricityPage));
@@ -82,7 +82,7 @@ public class HourlyElectricityServiceTest {
 		return hourlyElectricity;
 	}
 	
-	public Page<HourlyElectricity> getHourlyElectricities() {
+	public Page<HourlyElectricity> getHourlyElectricitiesPage() {
 		ArrayList<HourlyElectricity> arrList = new ArrayList<HourlyElectricity>();
 		HourlyElectricity a = getHourlyElectricity();
 		HourlyElectricity b = getHourlyElectricity();
