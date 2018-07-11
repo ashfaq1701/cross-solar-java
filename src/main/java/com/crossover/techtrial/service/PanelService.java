@@ -14,7 +14,7 @@ public interface PanelService {
    * @param panel to register with system.
    */
   
-  void register(Panel panel);
+  Panel register(Panel panel);
   
   Panel findBySerial(String serial);
 }

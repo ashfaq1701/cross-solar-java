@@ -39,8 +39,7 @@ public class PanelController {
    */
   @PostMapping(path = "/api/register")
   public ResponseEntity<?> registerPanel(@RequestBody Panel panel) {
-    panelService.register(panel);
-    return  ResponseEntity.accepted().build();
+    return  ResponseEntity.accepted().body(panelService.register(panel));
   }
   
   /**
@@ -59,7 +58,7 @@ public class PanelController {
 		  return ResponseEntity.notFound().build(); 
 	  }
 	  hourlyElectricity.setPanel(panel);
-	  return ResponseEntity.ok(hourlyElectricityService.save(hourlyElectricity));
+	  return ResponseEntity.accepted().body(hourlyElectricityService.save(hourlyElectricity));
   }
    
   /**
